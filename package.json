@@ -1,0 +1,38 @@
+{
+  "name": "ipfs-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type" : "module",
+  "scripts": {
+    "start": "node ./src index.js"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blockstore-core": "^1.0.2",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "ipfs": "^0.61.0",
+    "ipfs-core": "^0.17.0",
+    "ipfs-http-client": "^56.0.2",
+    "ipfs-http-server": "^0.14.0",
+    "it-all": "^1.0.6",
+    "js-ipfs-fetch": "^4.2.3",
+    "libp2p": "^0.35.8"
+  },
+ 
+
+
+  "exports": {
+    "./features/": "./dist/features/*.js"
+  },
+  "resolution": {
+    "blockstore-core": "1.0.2"
+  },
+  "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.20.0"
+  },
+  "description": ""
+}
